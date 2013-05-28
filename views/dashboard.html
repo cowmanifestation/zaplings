@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="jquery-1.9.1.js"></script>
+  <script src="jquery-ui-1.10.3/ui/jquery-ui.js"></script>
+  <link rel="stylesheet" href="jquery-ui-1.10.3/themes/base/jquery-ui.css" />
+  <script>
+    $(function() {
+      $( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+      $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+    }); 
+  </script>
+    <style>
+      .ui-tabs-vertical { width: 55em; }
+      .ui-tabs-vertical .ui-tabs-nav { padding: .2em .1em .2em .2em; float: left; width: 12em; }
+      .ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; }
+      .ui-tabs-vertical .ui-tabs-nav li a { display:block; }
+      .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; border-right-width: 1px; }
+      .ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: right; width: 40em;}
+  </style>
+</head>
+<body>
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Tab 1</a></li>
+    <li><a href="#tabs-2">Tab 2</a></li>
+    <li><a href="#tabs-3">Tab 3</a></li>
+  </ul>
+  <div id="tabs-1">
+    <h2>Tab 1</h2>
+    <p>A twitter feed</p>
+  </div>
+  <div id="tabs-2">
+    <h2>Tab 2</h2>
+    <p>Another twitter feed</p>
+  </div>
+  <div id="tabs-3">
+    <h2>Tab 3</h2>
+    <p>Some more tweets</p>
+    <p>Even more tweets</p>
+  </div>
+</div>
+</body>
+</html>
